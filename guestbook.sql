@@ -30,11 +30,12 @@ values (seq_guestbook_no.nextval,
  
 commit;
 
-
+--delete
 delete from guestbook
 where no= 1 
 and password= '1234';
 
+--select all
 select 	no,
         name,
         password,	
